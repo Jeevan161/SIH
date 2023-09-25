@@ -7,6 +7,7 @@ body {
 /* CSS for header */
 .header {
   display: flex;
+  height:80px;
   justify-content: space-between;
   align-items: center;
   background-color: #f5f5f5;
@@ -22,6 +23,7 @@ body {
 
 .nav-items {
   display: flex;
+  height: 78px;
   justify-content: space-around;
   align-items: center;
   background-color: #f5f5f5;
@@ -41,7 +43,7 @@ body {
   align-items: center;
   width: 100%;
   height: 520px;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("https://images.unsplash.com/photo-1587620962725-abab7fe55159?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031&q=80");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url('images/Hero.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -178,4 +180,16 @@ body {
   text-decoration: none;
   color: #a1a1a1;
   padding: 10px 20px;
+}
+
+.btn
+{
+    padding:10px 15px;
+    background :#5edaf0;
+    color:black;
+    font-size:16px;
+    border:none;
+    border-radius:10px;
+    font-weight:600;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }

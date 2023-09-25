@@ -1,0 +1,48 @@
+{% extends 'navbar.html' %}
+{% load static %}
+{% block tittle %}Case Registration{% endblock %}
+{% block css %}<link rel="stylesheet" href="{% static 'registercase.css' %}" >{% endblock %}
+{% block content %}
+<section class="cont">
+    <div class="incont">
+         <h3>Case Registration Form</h3>
+        <div class="inp">
+            <label for="name">Name :</label>
+            <input type="text" id="name">
+        </div>
+        <div class="inp">
+            <label for="description">Description :</label>
+            <input type="text" id="description">
+        </div>
+        <div class="inp">
+            <label for="category">Category :</label>
+            <select name="category" id="category">
+              <option value=" "> Select Category</option>
+              <option value="volvo">Constitution</option>
+              <option value="saab">Criminal</option>
+              <option value="mercedes">Civil</option>
+              <option value="audi">Human Right</option>
+            </select>
+        </div>
+         <div class="inp">
+            <label for="description">Advocates :</label>
+            <input type="text" id="Advocates">
+        </div>
+         <div class="inp">
+            <label for="description">Precedence :</label>
+            <input type="text" id="Precedence">
+        </div>
+
+
+         <div class="inp">
+            <label for="category">SubCategory :</label>
+              <select id="subcategory" name="subcategory">
+                  <option value=" "> Select Sub Category</option>
+              </select>
+        </div>
+    </div>
+
+
+</section>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+{% endblock %}

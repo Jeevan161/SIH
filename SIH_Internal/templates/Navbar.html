@@ -2,18 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>{% block tittle %}{% endblock %}</title>
   {% load static %}
-
+{% block css %}{% endblock %}
 <link rel="stylesheet" href="{% static 'navbar.css' %}" >
 </head>
 <body>
 <header class="header">
   <a href="#" class="logo">DCM</a>
   <nav class="nav-items">
-    <a href="#">Home</a>
+    <a href="/">Home</a>
     <a href="#">About</a>
     <a href="#">Contact</a>
+      <a href="/login"><button class="btn">Login</button></a>
   </nav>
 </header>
 {% block content %}
